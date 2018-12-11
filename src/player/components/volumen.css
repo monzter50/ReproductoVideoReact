@@ -1,0 +1,30 @@
+.volumen{
+	display: flex;
+	align-items: center;
+	padding: 0 15;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	outline: 0;
+	position: relative;
+}
+.volumen-range{
+	transform: rotate(-90deg);
+	transform-origin: left bottom;
+	position: absolute;
+	left: 50px;
+	bottom: 25px;
+	height: 50px;
+	display: none;
+	background: rgba(0,0,0,0.7);
+	padding-right: 20px;
+	border-radius: 0 20px 20px 0;
+}
+.volumen input{
+	cursor:grab;
+	background: blue;
+	border: 1px solid blue;
+}
+.volumen:hover .volumen-range{
+	display: flex;
+}
